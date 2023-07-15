@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ATM_Controller.v(5): object "card_inserted" differs only in case from object "CARD_INSERTED" in the same scope File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 5
+Info (10281): Verilog HDL Declaration information at ATM_Controller.v(6): object "barcode_scanned" differs only in case from object "BARCODE_SCANNED" in the same scope File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 6

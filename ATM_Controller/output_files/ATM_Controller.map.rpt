@@ -1,0 +1,243 @@
+Analysis & Synthesis report for ATM_Controller
+Sat Jul 15 16:39:13 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-----------------------------+------------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Sat Jul 15 16:39:13 2023              ;
+; Quartus Prime Version       ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name               ; ATM_Controller                                 ;
+; Top-level Entity Name       ; ATM_Controller                                 ;
+; Family                      ; Cyclone V                                      ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                      ;
+; Total registers             ; N/A until Partition Merge                      ;
+; Total pins                  ; N/A until Partition Merge                      ;
+; Total virtual pins          ; N/A until Partition Merge                      ;
+; Total block memory bits     ; N/A until Partition Merge                      ;
+; Total PLLs                  ; N/A until Partition Merge                      ;
+; Total DLLs                  ; N/A until Partition Merge                      ;
++-----------------------------+------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; ATM_Controller     ; ATM_Controller     ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                             ; 4                  ;                    ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sat Jul 15 16:38:54 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ATM_Controller -c ATM_Controller
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file atm_controller.v
+    Info (12023): Found entity 1: ATM_Controller File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 1
+Warning (12019): Can't analyze file -- file Verilog2.v is missing
+Info (12127): Elaborating entity "ATM_Controller" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at ATM_Controller.v(64): truncated value with size 3 to match size of target (2) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 64
+Warning (10230): Verilog HDL assignment warning at ATM_Controller.v(67): truncated value with size 3 to match size of target (2) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 67
+Warning (10230): Verilog HDL assignment warning at ATM_Controller.v(74): truncated value with size 3 to match size of target (2) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 74
+Warning (10230): Verilog HDL assignment warning at ATM_Controller.v(81): truncated value with size 3 to match size of target (2) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 81
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(83): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 83
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(87): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 87
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(96): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 96
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "display_data", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "old_balance", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "new_balance", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "mini_statement", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "dispense_cash_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "deposit_cash_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10240): Verilog HDL Always Construct warning at ATM_Controller.v(40): inferring latch(es) for variable "face_recognition_required_reg", which holds its previous value in one or more paths through the always construct File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(118): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 118
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(120): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 120
+Warning (10199): Verilog HDL Case Statement warning at ATM_Controller.v(122): case item expression never matches the case expression File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 122
+Warning (10034): Output port "otp_required" at ATM_Controller.v(15) has no driver File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 15
+Info (10041): Inferred latch for "face_recognition_required_reg" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "deposit_cash_reg" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "dispense_cash_reg" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "mini_statement" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[0]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[1]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[2]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[3]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[4]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[5]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[6]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "new_balance[7]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[0]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[1]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[2]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[3]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[4]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[5]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[6]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "old_balance[7]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[0]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[1]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[2]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[3]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[4]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[5]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[6]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Info (10041): Inferred latch for "display_data[7]" at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Error (10028): Can't resolve multiple constant drivers for net "display_data[7]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10029): Constant driver at ATM_Controller.v(40) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 40
+Error (10028): Can't resolve multiple constant drivers for net "display_data[6]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10028): Can't resolve multiple constant drivers for net "display_data[5]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10028): Can't resolve multiple constant drivers for net "display_data[4]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10028): Can't resolve multiple constant drivers for net "display_data[3]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10028): Can't resolve multiple constant drivers for net "display_data[2]" at ATM_Controller.v(108) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 108
+Error (10028): Can't resolve multiple constant drivers for net "display_data[1]" at ATM_Controller.v(109) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 109
+Error (10028): Can't resolve multiple constant drivers for net "display_data[0]" at ATM_Controller.v(109) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 109
+Error (10028): Can't resolve multiple constant drivers for net "mini_statement" at ATM_Controller.v(129) File: C:/Users/DELL/OneDrive/Desktop/ATM_Controller/ATM_Controller.v Line: 129
+Error (12153): Can't elaborate top-level user hierarchy
+Info (144001): Generated suppressed messages file C:/Users/DELL/OneDrive/Desktop/ATM_Controller/output_files/ATM_Controller.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 11 errors, 19 warnings
+    Error: Peak virtual memory: 4782 megabytes
+    Error: Processing ended: Sat Jul 15 16:39:13 2023
+    Error: Elapsed time: 00:00:19
+    Error: Total CPU time (on all processors): 00:00:33
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/DELL/OneDrive/Desktop/ATM_Controller/output_files/ATM_Controller.map.smsg.
+
+
